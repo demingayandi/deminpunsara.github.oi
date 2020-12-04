@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body
+
+
+
+{
+  font-family:ariel, helvetica,sans-serif;
+}
+
+.navbar{
+    overflow:hidden;
+    background-color:#333;
+}
+
+.navbar a{
+    float:left;
+    font-size: 16px;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+}
+
+.dropdown{
+   float:left;
+   overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color:white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn{
+  background-color:red;
+}
+
+.dropdown-content {
+ display: none;
+ position:absolute;
+ background-color: #f9f9f9;
+ min-widht: 160px;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ z-index; 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block
+  text-align: left;
+}
+
+.dropdown-content a-hover{
+ background-color: #aaa;
+ }
+
+.dropdown:hover .dropdown-content {
+ display: block;
+}
+
+</style>
+</head>
+
+<body>
+
+
+
+<div class="navbar">
+  <a href="web.html">home</a>
+  <a href="1.html">news</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown
+       <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="liki.html">HTML</a>
+      <a href="link1.css">CSS</a>     
+      <a href="f.html">JAVA</a>
+	  <a href="#">PHP</a>
+       </div>
+    </div>
+    </div>
+</div>
+</body>
+</html><br></br>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 9</div>
+  <img src="img_nature_wide.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 9</div>
+  <img src="img_snow_wide.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 9</div>
+  <img src="img_mountains_wide.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>  
+
+ <div class="mySlides fade">
+  <div class="numbertext">4 / 9</div>
+  <img src="benz.jpg" style="width:100%">
+  <div class="text">Caption four</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 9</div>
+  <img src="bmw.jpg" style="width:100%">
+  <div class="text">Caption five</div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 9</div>
+  <img src="wall.jpg" style="width:100%">
+  <div class="text">Caption six</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 9</div>
+  <img src="lambo.jpg" style="width:100%">
+  <div class="text">Caption seven</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 9</div>
+  <img src="clock.jpg" style="width:100%">
+  <div class="text">Caption eight</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">9 / 9</div>
+  <img src="city.jpg" style="width:100%">
+  <div class="text">Caption nine</div>
+</div>
+
+
+
+
+
+
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 
+<html>
+<head>
+<title>Casacod style sheet </title>
+<link rel="stylesheet" type="text/css" href="link2.css">
+</head>
+<body>
+<script>
+var name = prompt("please enter your name " , "  ") 
+var age = prompt("please enter your age " , "  ") 
+document.write(  "Hellow....! "+ name + "Your are" + age + "Years old.");
+</script>
+
+
+<h1> Hi, Iam Demin Punsara</h1>
+<p>Welcome to our country </p>
+<p class="paral">Our country is an island</p>
+<p id="para 2">Our country is a beutiful country</p>
+<p id="para 3">Our country called pearl of indian ocean</p>
+
+
+
+</body>
+</html>
